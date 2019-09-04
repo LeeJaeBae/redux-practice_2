@@ -1,9 +1,16 @@
 import React from "react";
 
-const Home = () => {
+const Home = ({ history }) => {
   return (
     <div>
       <h2>HOME</h2>
+      <button
+        onClick={() => {
+          history.push("/about/javascript");
+        }}
+      >
+        use JAVASCRIPT for move
+      </button>
     </div>
   );
 };
